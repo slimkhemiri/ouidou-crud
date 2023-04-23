@@ -7,9 +7,10 @@ function App() {
   const { pokemons, isLoading } = usePokemons();
   return (
     <div>
+      <SearchPokemon/>
       <CreatePokemon pokemons={pokemons} />
       <GetPokemons isLoading={isLoading} />
-      <SearchPokemon/>
+      
     </div>
   );
 }

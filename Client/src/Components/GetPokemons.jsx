@@ -22,7 +22,6 @@ const GetPokemons = ({isLoading}) => {
           <p>Type 1: {pokemon["Type 1"]}</p>
           {pokemon["Type 2"] && <p>Type 2: {pokemon["Type 2"]}</p>}
           <p>Total: {pokemon.Total}</p>
-          <button >Edit</button>
           <DeletePokemon id={pokemon["#"]} onPokemonDeleted={handlePokemonDeleted} />
         </div>
       </div>
